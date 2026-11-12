@@ -11,6 +11,10 @@ $(call inherit-product, vendor/lineage/config/common_full_foldable_book_telephon
 DEVICE_CODENAME := rango
 DEVICE_PATH := device/google/rango
 VENDOR_PATH := vendor/google/rango
+
+# PixelExtraParts
+-include packages/apps/PixelExtraParts/device.mk
+
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 
 # Device identifier. This must come after all inclusions
